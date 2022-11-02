@@ -29,10 +29,10 @@ fn test_macro(){
             a: 1,
             c: "d",
             d: TestStruct2 {
-                g: "lll",
-                h: "ooo",
+                g: String::from("lll"),
+                h: "ooo".to_owned(),
                 l: TestStruct3 {
-                    o: "ffff",
+                    o: 42,
                     i: "lololo",
                 },
                 u: "lllllllooooo"
@@ -48,7 +48,7 @@ fn test_macro(){
             g: "lll".to_string(),
             h: "ooo".to_string(),
             l: TestStruct3 {
-                o: "ffff".to_string(),
+                o: 42.to_string(),
                 i: "lololo".to_string(),
             },
             u: "lllllllooooo".to_string(),
