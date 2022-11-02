@@ -4,7 +4,7 @@ description = "The append_to_string!() macro. Appends every occurance of a liter
 repository = "https://github.com/DavidCks/append_to_string"
 readme = "README.md"
 license = "MIT"
-keywords = ["str", "conversion", "struct", "owned", "macro", "append", "auto", "automatic", "auto-append", "auto_convert"]
+keywords = ["str", "conversion", "struct", "nested"]
 categories = ["rust-patterns"]
 homepage = "https://github.com/DavidCks"
 
