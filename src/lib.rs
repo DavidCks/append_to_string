@@ -52,7 +52,6 @@ impl syn::fold::Fold for Args {
     }
 }
 
-#[allow(non_snake_case)]
 #[proc_macro]
 pub fn append_to_string(input: TokenStream) -> TokenStream {
 
