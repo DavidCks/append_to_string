@@ -1,0 +1,22 @@
+[package]
+name = "append_to_string"
+description = "The append_to_string!() macro. Appends every occurance of a literal within a struct or on its own with a .to_string()."
+repository = "https://github.com/DavidCks/append_to_string"
+readme = "README.md"
+license = "MIT"
+keywords = ["str", "conversion", "struct", "owned", "macro", "append", "auto", "automatic", "auto-append", "auto_convert"]
+categories = ["rust-patterns"]
+
+version = "0.1.0"
+authors = ["David Christ <david.christ99@live.de>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version="1.0.57", features=["full","fold"] }
+quote = "1.0.8"
+proc-macro2 = "1.0.47" 
