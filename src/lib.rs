@@ -1,34 +1,11 @@
 //! This crate contains the [append_to_string!] macro, which appends the .to_string()
-//! method to any directly declared literals (i.e. &str, i32, etc.) that it finds
+//! method to any directly declared literals (i.e. "hellostr", 42, etc.) that it finds
 //! inside a given struct instantiation. It also works for literals that are not part of a struct.
 //!
 //! It can be useful when large structs with String fields are being declared.
-//!
-//!```rust
-//! // nested struct example
-//! let b1 = append_to_string!( 
-//!     B {
-//!         s1: "hello",
-//!         s2: "world",
-//!         a: A {
-//!             s1: "nested",
-//!             s2: "struct",
-//!         }
-//!     }
-//! );
-//! 
-//! let b2 = B {
-//!     s1: "hello".to_string(),
-//!     s2: "world".to_string(),
-//!     a: A {
-//!         s1: "nested".to_string(),
-//!         s2: "struct".to_string(),
-//!     }
-//! };
-//! 
-//! assert_eq!(b1, b2);
-//! ```
+//! For examples you can look inside the [tests] folder.
 //! [append_to_string!]: https://github.com/DavidCks/append_to_string/
+//! [tests]: https://github.com/DavidCks/append_to_string/tree/main/tests
 
 
 extern crate proc_macro;
