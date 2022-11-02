@@ -84,4 +84,7 @@ assert_eq!(b1, b2);
 May be useful for when you need to create big structs with String fields but want to keep the code readable or save time by not typing out a conversion method for &str types.
 
 ## dependencies
+
 this crate uses the syn, quote, and proc_macro2 crates.
+
+

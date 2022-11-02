@@ -6,6 +6,7 @@ readme = "README.md"
 license = "MIT"
 keywords = ["str", "conversion", "struct", "owned", "macro", "append", "auto", "automatic", "auto-append", "auto_convert"]
 categories = ["rust-patterns"]
+homepage = "https://github.com/DavidCks"
 
 version = "0.1.0"
 authors = ["David Christ <david.christ99@live.de>"]
